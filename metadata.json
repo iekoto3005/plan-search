@@ -1,0 +1,5 @@
+{
+  "name": "trip プラン検索",
+  "description": "An application to find and filter architectural plans by building type, number of floors, orientation, and area (in tsubo). Users can select filter options via buttons for an intuitive experience.",
+  "requestFramePermissions": []
+}
