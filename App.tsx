@@ -37,7 +37,7 @@ const App: React.FC = () => {
       if (filters.tsuboRange !== 'all') {
         const [min, max] = filters.tsuboRange.split('-').map(Number);
         // The max value for the largest range is 999, so '< max' works for all ranges.
-        result = result.filter(plan => plan.tsubo >= min && plan.tsubo < max);
+        result = result.filter(plan => plan.tsubo >= min && plan.tsubo < (max === 999 ? Infinity : max));
       }
       
       setFilteredPlans(result);
